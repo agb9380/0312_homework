@@ -11,7 +11,7 @@ public class Qus6 {
 		Scanner sc = new Scanner(System.in);
 		int i = 5; // 5번의 기회가 주어짐
 	
-		int start =1;
+		int start =0;
 		int end =100;
 		
 		while (true) {
@@ -20,7 +20,7 @@ public class Qus6 {
 			int input = sc.nextInt();
 			if (input < 0 || input > 101) {
 				i++; // 범위를 벗어난 값을 입력하더라도 기회가 사라지는게 아니기 때문임
-				System.out.println("범위를 벗어났습니다. 1~100 사이의 수를 입력해주세요.");
+				System.out.println("범위를 벗어났습니다. 0~100 사이의 수를 입력해주세요.");
 			}
 
 			else if (randomNum < input) {
