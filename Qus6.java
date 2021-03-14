@@ -27,7 +27,7 @@ public class Qus6 {
 				System.out.println(input + "보다 작은 수 입니다.");
 				System.out.println("기회는" + i + "번 남았습니다.");
 				//System.out.println("1~" + (input - 1)); 초반에 생각했던 것, 입력하고 값을 바로 보여주려고함, 그런데 입력값 input 하나로 여러 번 사용해야함, 처음에 input2, input3이런식으로 사용함..
-				end = input-1;
+				end = input-1;    // 위에 처럼 범위 출력을 한 번더 하게됨, 위 값처럼 출력하면, while 밑에 출력문과 겹쳐서 2번 출력됨
 
 				if (input < 0 || input > 101) {
 					i++;
