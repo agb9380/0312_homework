@@ -7,7 +7,7 @@ public class Qus6 {
 
 	public static void main(String[] args) {
 		Random r = new Random();
-		int randomNum = r.nextInt(100) + 1; // 0~100의 수 중 랜덤으로 선택
+		int randomNum = r.nextInt(100) + 1; // 0~99의 수 중 +1 해서 1~100의 수를 랜덤으로 선택
 		Scanner sc = new Scanner(System.in);
 		int i = 5; // 5번의 기회가 주어짐
 	
