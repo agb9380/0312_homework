@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class Qus7 {
 
 	public static void main(String[] args) {
-		Random r = new Random(); // 0~99사이의 수 중 내가 생각한 숫자를 컴퓨터가 맞추는 것 , 0~99 +1 => 0~100
-		int randomNum = r.nextInt(100) + 1; // 0~100사이의 수를 랜덤으로 추출
+		Random r = new Random(); // 0~99사이의 수 중 내가 생각한 숫자를 컴퓨터가 맞추는 것 , 0~99 +1 => 1~100
+		int randomNum = r.nextInt(100) + 1; // 1~100사이의 수를 랜덤으로 추출
 		Scanner sc = new Scanner(System.in);
-		int start = 1;
+		int start = 0;
 		int end=100;
 
 		while(true) {
