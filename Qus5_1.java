@@ -14,9 +14,9 @@ public class Qus5_1 {
 		for (int i = 1; i <= input; i++) {
 
 			for (int j = input; j > 0; j--) { 
-				if (i < j) {			// 입력한 수보다 1작은 '-' 출력
+				if (i < j) {			// 입력한 수보다 1작은 '-' 출력 ex) i=1일 때, j=input=5일 때, 5,4,3,2 4번 돌아감 (j--), i는 행이라는것을 기억
 					System.out.print('-');
-				} else if (i>= j) { 	// 입력한 수가 i와 같거나 작은 경우에는 
+				} else if (i>= j) { 	// 입력한 수가 i와 같거나 작은 경우에는 별표 출력
 					System.out.print('*'); 
 				}
 			}System.out.println();
