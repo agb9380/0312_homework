@@ -39,13 +39,19 @@ public class Qus2 {
 			i++; // 처음에 빼먹은 부분, while(i < Arr.length)의 종료를 위해 반드시 필요
 		}
 		System.out.println("<P R I N T>");
-
-		for (int j = 0; j < B_Arr.length; j++) { // 두 배열을 합치기 위해 전체 배열 A_rr에 B,C를 합해서 출력
+		
+		// System.arraycopy를 통해 두 배열을 합치기
+		
+		System.arraycopy(B_Arr, 0, Arr,0,B_Arr.length); // System.arraycopy(가져올 배열, 그 배열의 어디부터 가져올지, 가져와서 어디에 붙여넣는지, 붙여넣는 곳 시작점, 가져올 배열의 크기)
+		System.arraycopy(C_Arr, 0, Arr, B_Arr.length,C_Arr.length);
+		
+		// [for문을 통해 두 배열을 합쳐주기]
+		/* for (int j = 0; j < B_Arr.length; j++) { // 두 배열을 합치기 위해 전체 배열 A_rr에 B,C를 합해서 출력
 			Arr[j] = B_Arr[j];  // 처음에 Arr[j] += B_Arr[j]; 로 했는데, +=할 필요없음
 			for (int k = 0; k < C_Arr.length; k++) { // B가 들어간 전체 배열에 C 넣기
 				Arr[B_Arr.length + k] = C_Arr[k]; //  B.length B의 사이즈부터 시작하면, 인덱스 시작이 B가 모두 들어간 이후 부터임, 그리고 Arr[B_Arr.length + k] 처음에 +k하는거 깜빡함
 			}									  // 그리고 Arr[B_Arr.length + k] 처음에 +k하는거 깜빡함, 인덱스가 이동되어야 하니까..
-		}
+		} */ 
 		System.out.println(Arrays.toString(Arr));
 	}
 }
