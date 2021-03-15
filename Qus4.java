@@ -10,7 +10,7 @@ public class Qus4 {
 		int[] Arr = new int[100];
 		int cnt = 0;
 
-		for (int i = 0; i < 99; i++) {
+		for (int i = 0; i < 99; i++) {   // 99 -> Arr.length-1 이렇게,, 상수값으로 쓰지말고, 배열의 길이로 지정하기
 			Arr[i] = i + 2;
 			System.out.println(Arr[i]);
 			for (int j = 0; j < Arr.length; j++) {
